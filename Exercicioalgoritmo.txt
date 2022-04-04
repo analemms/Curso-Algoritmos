@@ -1,0 +1,22 @@
+algoritmo "idadedejess"
+var
+  ano_atual, ano_nascimento, idade: Inteiro
+  reais, dolares: Real
+  F, C: Real
+
+inicio
+      Escreva ("Em que ano nós estamos? ")
+      Leia (ano_atual)
+      Escreva ("Em que ano você nasceu? ")
+      Leia (ano_nascimento)
+      idade <- (ano_nascimento - ano_atual)
+      Escreval ("Então sua idade é: ", Idade)
+      Escreva ("Quanto de dinheiro em real você tem para a sua viagem de destino? R$ ")
+      Leia (reais)
+      dolares <- reais/ 4.61
+      Escreval ("Convertendo, você tem U$$ ", dolares)
+      Escreva ("Qual a temperatura aqui? ")
+      Leia (F)
+      C <- (F- 32)/ 1.8
+      Escreva ("No Brasil estaria ", C:4:1, " neste momento")
+fimalgoritmo
