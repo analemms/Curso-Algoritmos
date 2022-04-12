@@ -7,10 +7,14 @@ inicio
       Escreva ("Digite a nota da AV2: ")
       Leia (AVs)
       Media <- (AVp + AVs)/2
-      EscrevaL ("Sua média geral é: ", Media, ".")
+      EscrevaL ("Sua média geral é: ", Media:4:2, ".")
       Se (Media >= 7) entao
          Escreva ("Parabéns, você foi aprovado! Boas férias!")
-      Senao (Media <= 7) entao
-            Escreva ("Você não atingiu a média necessária. Estude um pouco mais.")
+      Senao
+           Se(Media >= 5) e (Media <7) entao
+            EscrevaL ("Você está em recuperação. Estude um pouco mais.")
+           Senao
+            Escreva ("Aluno reprovado.")
+            FimSe
       FimSe
 fimalgoritmo
