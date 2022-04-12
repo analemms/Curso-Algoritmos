@@ -1,0 +1,16 @@
+algoritmo "DepartamentoDeTransito"
+var
+      Ano, Nasc, Idade: Inteiro
+inicio
+      Escreva ("Ano atual: ")
+      Leia (Ano)
+      Escreva ("Ano de nascimento: ")
+      Leia (Nasc)
+      Idade <- ano - nasc
+      EscrevaL ("Idade: ", Idade, " anos.")
+      Se (Idade >= 18) entao
+         Escreva ("Você está apto a tirar a carteira de motorista.")
+      Senao (Idade <= 18) entao
+            Escreva ("Você não está apto a tirar a carteira de motorista.")
+      FimSe
+fimalgoritmo
