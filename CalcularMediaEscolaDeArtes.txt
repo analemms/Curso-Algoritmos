@@ -1,0 +1,16 @@
+algoritmo "EscolaDeArtes"
+var
+      AVp, AVs, Media: Real
+inicio
+      Escreva ("Digite a nota da AV1: ")
+      Leia (AVp)
+      Escreva ("Digite a nota da AV2: ")
+      Leia (AVs)
+      Media <- (AVp + AVs)/2
+      EscrevaL ("Sua média geral é: ", Media, ".")
+      Se (Media >= 7) entao
+         Escreva ("Parabéns, você foi aprovado! Boas férias!")
+      Senao (Media <= 7) entao
+            Escreva ("Você não atingiu a média necessária. Estude um pouco mais.")
+      FimSe
+fimalgoritmo
