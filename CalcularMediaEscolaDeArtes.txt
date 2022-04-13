@@ -8,13 +8,27 @@ inicio
       Leia (AVs)
       Media <- (AVp + AVs)/2
       EscrevaL ("Sua média geral é: ", Media:4:2, ".")
-      Se (Media >= 7) entao
-         Escreva ("Parabéns, você foi aprovado! Boas férias!")
-      Senao
-           Se(Media >= 5) e (Media <7) entao
-            EscrevaL ("Você está em recuperação. Estude um pouco mais.")
-           Senao
-            Escreva ("Aluno reprovado.")
+      Se (Media >= 9) entao
+         Escreva ("Seu aproveitamento é A. Parabéns, você foi aprovado!")
+      senao
+           Se (Media >= 8) e (Media < 9) entao
+                   EscrevaL ("Seu aproveitamento foi B. Parabéns, você foi aprovado!")
+           senao
+                Se (Media >= 7) e (Media < 8) entao
+                   EscrevaL ("Seu aproveitamento foi C. Parabéns, você foi aprovado!")
+           senao
+                Se (Media >= 6) e (Media < 7) entao
+                   EscrevaL ("Seu aproveitamento foi D. Você está de recuperação, estude um pouco mais.")
+           senao
+                Se (Media >= 5) e (Media < 6) entao
+                   EscrevaL ("Seu aproveitamento foi E. Você está de recuperação, estude um pouco mais.")
+           senao
+                Se (Media < 5) entao
+                   EscrevaL ("Você foi reprovado.")
+                            FimSe
+                        FimSe
+                    FimSe
+                FimSe
             FimSe
-      FimSe
+          FimSe
 fimalgoritmo
