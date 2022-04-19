@@ -1,0 +1,25 @@
+algoritmo "MaiorAproveitamento2"
+var
+   total, cont: Inteiro
+   nota, maiorNota: Real
+   nome, melhorAluno: Caractere
+inicio
+      EscrevaL ("Maior aproveitamento escolar da turma")
+      Escreva ("Quantos alunos a turma tem? ")
+      Leia (total)
+      cont <- 1
+      Enquanto cont <= total faca
+               Escreval ("Aluno ", cont)
+               Escreva ("Nome do Aluno: ")
+               Leia (nome)
+               Escreva ("Nota de ", nome, ": ")
+               Leia (nota)
+               Se (nota > maiornota) entao
+                  maiornota <- nota
+                  melhoraluno <- nome
+               FimSe
+               cont <- cont + 1
+      FimEnquanto
+      Escreval("O melhor aproveitamento foi de ", melhorAluno, " com a nota ", maiorNota:3:1)
+               
+fimalgoritmo
