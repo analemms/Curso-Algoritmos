@@ -1,0 +1,26 @@
+algoritmo "ContagemInteligente"
+var
+   I, F: Inteiro
+
+inicio
+      Escreval ("CONTAGEM INTELIGENTE")
+      Escreval ("--------------------")
+      Escreva ("Início: ")
+      Leia(I)
+      Escreva ("Fim: ")
+      Leia(F)
+
+      Se (I < F) entao
+          Enquanto (I <= F) faca
+             Escreva (I)
+             I <- I + 1
+      FimEnquanto
+      Senao
+          Se (I > F) entao
+             Enquanto (I >= F) faca
+                EscrevaL (I)
+                I <- I - 1
+             FimEnquanto
+        FimSe
+      FimSe
+fimalgoritmo
