@@ -1,0 +1,14 @@
+algoritmo "TabuadaComRepita"
+var
+   Cont, N, Resultado: Inteiro
+
+inicio
+      Cont <- 1
+      Escreva ("Você deseja a tabuada de qual número? ")
+      Leia (N)
+      Repita
+         Resultado <- N * Cont
+         EscrevaL (N, " x", Cont, " = ", Resultado)
+      Cont <- Cont + 1
+      Ate (Cont > 10)
+fimalgoritmo
