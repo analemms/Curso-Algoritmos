@@ -19,7 +19,7 @@ inicio
            senao
                 Se(IMC >= 25) e (IMC < 30) entao
                  EscrevaL ("Sobrepeso")
-           Senao
+           senao
                 Se (IMC >= 30) e (IMC < 35) entao
                    EscrevaL ("Obesidade")
                 senao
